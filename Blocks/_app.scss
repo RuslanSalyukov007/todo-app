@@ -1,0 +1,97 @@
+.todo-app {
+    width: 600px;
+    max-width: 100%;
+    min-height: 280px;
+    height: auto;
+    margin: auto;
+
+    margin-top: 100px;
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 15px;
+
+    margin-bottom: 100px;
+}
+
+.todo__row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 15px;
+    img {
+        width: 30px;
+    }
+}
+
+.todo__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(4, 70, 211);
+}
+
+
+// List
+
+.list {
+
+    li {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 19px;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        color: black;
+        font-weight: 400;
+
+        &:empty {
+            display: none;
+        }
+
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            
+            border: 2px solid #c9c9c9;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            top: 12px;
+            left: 8px;
+        }
+    }
+
+
+    img {
+        width: 40px; 
+        border-radius: 50px;
+
+        transition: all 0.2s ease-in;
+        padding: 10px;
+        
+        &:hover {
+            background-color: rgb(219, 219, 219);
+        }
+    }
+}
+.checked {
+    text-decoration: line-through;
+    color: #555 !important;
+    
+    &::before {
+        border: none !important;
+        background-image: url(./../img/svgicons/check.svg);
+    }
+}
+
+

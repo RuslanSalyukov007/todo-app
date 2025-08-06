@@ -1,0 +1,31 @@
+// Form
+
+.form {
+    margin-bottom: 30px;
+}
+.form-group {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #ececec;
+    border-radius: 50px;
+}
+.new-task {
+    width: 100%;
+    padding-left: 20px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6)
+}
+.add-task {
+    padding: 20px 45px;
+    border-radius: 50px;
+
+    background-color: #f57438 !important;
+    color: white;
+
+    
+}
